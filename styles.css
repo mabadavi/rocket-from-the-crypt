@@ -1,0 +1,118 @@
+body{
+	margin: 0 auto;
+	background-color: #006fa1;
+	font-family: 'Roboto', sans-serif;
+}
+#poster{
+  background: #019ade;
+  width: 100%;
+  height: calc(100vw * 1.4);
+  max-width: 500px;
+  max-height: 700px;
+  margin: 2vh auto;
+  box-shadow: 6px 6px 10px #333;
+  overflow: hidden;
+}
+.header{
+	display: flex;
+	height:25%;
+}
+
+.header-box{
+	width: 100%;
+	padding-top:15px;
+	padding-left:20px;
+	height:100%;
+	background-color: #019ade;
+	display: flex;
+	margin: 0 10px;
+}
+.header-box p{
+	font-size: 1.8vh;
+	font-weight: bold;
+	color: white;
+}
+
+.design-container{
+	display: block;
+	height: 60%;
+	background-color: #019ade;
+}
+
+.text-box{
+	display: block;
+	background-color: #019ade;
+	height: 33%;
+	position:relative;
+}
+
+.title{
+	height: 40%;
+	width: 100%;
+	box-sizing: border-box;
+	z-index:1;
+}
+
+.title h1{
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+	font-size: 100px;
+	color: white;
+	margin-left: 5%;
+}
+
+.box{
+	position: absolute;
+	z-index:2;
+	box-sizing: border-box;
+	margin-top:40px;
+	margin-left:20px;
+	mix-blend-mode: darken;	
+	background-color: #d3b519;
+	animation: animate 2s ease-in infinite;
+}
+.box-1{
+	animation: animate 2s ease-in infinite;	
+}
+.box-2{
+	animation: animate 3s ease-in infinite;
+}
+.box-3{
+	animation: animate 2.5s ease-in infinite;
+}
+
+
+.fade-container .fade-hover {
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.fade-container:hover .fade-hover {
+    opacity: 0.0;
+}
+
+.fade-container:hover .fade-hover:hover {
+    opacity: 1;
+	font-weight:bold;
+}
+
+
+@keyframes animate {
+  0% {
+    left: -450px;
+  }
+  50% {
+    left: 500px;
+  }
+  100% {
+    left: -450px;
+  }
+}
+
+.bottom-container{
+		display: block;
+	height: 15%;
+	background-color: #019ade;
+}
+}
